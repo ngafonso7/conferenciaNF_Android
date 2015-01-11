@@ -1,0 +1,111 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ConferenciaNF">
+
+    <TableRow
+        android:id="@+id/linha1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="5dip">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:text="CNPJ/CPF"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/txtCNPJ"
+            android:layout_width="400dp"
+            android:digits="1234567890.,"
+            android:ems="10"
+            android:hint="CNPJ"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:singleLine="true"
+            android:selectAllOnFocus="true" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/linha2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:text="Fornecedor"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/txtFornecedor"
+            android:hint="Fornecedor"
+            android:layout_width="400dp"/>
+
+
+    </TableRow>
+
+    <TableRow
+            android:id="@+id/linha3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+        <TextView
+                android:id="@+id/textView3"
+                android:text="Numero NF"
+                android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/txtNumNF"
+            android:hint="Numero NF"
+            android:layout_width="400dp"/>
+        
+    </TableRow>
+
+    <TableRow 
+        	android:id="@+id/linha3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:gravity="right">
+        <Button 
+            android:id="@+id/botaoInserir"
+            android:text="Inserir"
+            android:layout_marginTop="30dp"
+            />
+        
+    </TableRow>
+    
+
+    <TableRow
+            android:id="@+id/linha5"
+            android:layout_width="450sp"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+        
+        <ListView
+            android:id="@+id/listaProd"
+            android:layout_height="200dp"
+            android:layout_width="600sp"
+            android:layout_marginTop="10sp"
+            android:dividerHeight="0px"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:background="@layout/border"
+            android:layout_span="4"/>
+        
+
+
+    </TableRow>
+
+
+</TableLayout>
